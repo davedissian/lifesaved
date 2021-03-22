@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Life-Saved!</title>
+    <title>Life Saved!</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -29,7 +29,7 @@
 
                 <p>
                     <label for="email"> Digite seu e-mail <br/></label>
-                    <input type="text" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required>
                 </p>
 
                 <!-- Estado --> 
