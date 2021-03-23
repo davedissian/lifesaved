@@ -28,6 +28,11 @@
           </p>
 
           <p>
+            <label for="senha2"> Digite novamente sua senha </label>
+            <input type="password" name="senha2" id="senha" maxlength="8" required>
+          </p>
+
+          <p>
               <label for="email"> Digite seu e-mail <br/></label>
               <input type="text" name="email" id="email" required>
           </p>

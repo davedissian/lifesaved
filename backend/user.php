@@ -1,13 +1,13 @@
 <?php
-    /*
     session_start();
     $_SESSION["email"] = $_POST["email"];
     $_SESSION["senha"] = $_POST["senha"];
-    */
+    
     require_once 'conecta.php';
 
     $nome = $_POST['nome'];
     $senha = sha1($_POST["senha"]);
+    $senha2 = sha1($_POST["senha2"]);
     $email = $_POST['email'];
     $cpf = $_POST['cpf'];
     $telefone = $_POST['telefone'];
@@ -40,6 +40,14 @@
                 </script>
             ";
         
+        } else if($senha != $senha2){
+            echo "
+                <script>
+                    alert('Senha não confere');
+                    location.href = '../usuario.php';
+                </script>
+            ";
+            
         } else {
             $checar_email = "SELECT email FROM usuario WHERE email = '$email'";
             $executa = mysqli_query($conexao, $checar_email);
