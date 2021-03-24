@@ -40,12 +40,17 @@ session_start();
                 <label for="senha" class="form-label">Senha</label>
                 <input type="password" class="form-control" name="senha" id="senha" maxlength="8">
             </div>
-            <button type="submit" class="btn cancel my-3">Entrar</button><br>
-            <a href="usuario.php" class="col-sm-6 col-md-4 col-lg-3">Ainda não tem cadastro? Clique aqui!</a>
+            <div class="container">
+              <button type="submit" class="btn cancel my-3 btn-primary">Entrar</button><br>
+              <a href="usuario.php" class="col-sm-6 col-md-4 col-lg-3 text-danger">Ainda não tem cadastro? Clique aqui!</a>
+            </div>
         </form>
     </div>
 
-
+    <?php
+    require_once('footer.html');
+    ?>
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>

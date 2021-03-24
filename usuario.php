@@ -63,8 +63,13 @@
       </form>
     </div>
   </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+
+  <?php
+	require_once('footer.html');
+	?>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

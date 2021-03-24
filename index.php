@@ -112,21 +112,12 @@
 			</div>
 		</div>
 		<br>
-		<div>
-			<p align="center"> 
-				<img src="./imagens/CONTATO2.png" width="1200">
-			</p>	
-			<div>
-				<p align="center"> 
-					<img src="./imagens/fimpag2.png" width="1200">
-				</p>	
-				<p align="center"> 
-					<img src="./imagens/fimpag3.png" width="1200">
-				</p>
-			</div>
-		</div>
 	</div>
 
+	<?php
+	require_once('footer.html');
+	?>
+	
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>

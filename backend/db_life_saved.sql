@@ -23,5 +23,9 @@ create table if not exists clinica(
     foreign key(id_usuario) references usuario(id_usuario)
 );
 
-select * from usuario;
-select * from clinica;
+create table contato (
+    id int not null AUTO_INCREMENT PRIMARY KEY,
+    email varchar(80) not null,
+    telefone varchar(12) not null,
+    mensagem varchar(500) not null
+    );

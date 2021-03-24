@@ -11,13 +11,14 @@
   <body>
 
     <div class="container-fluid">
-	<?php
-	require_once('menu.html');
-	?>
-	</div>
-		<p align="center"> 
-			<img src="./imagens/apk.png" width="1200">
-		</p>
+    <?php
+    require_once('menu.html');
+    ?>
+    </div>
+
+		<?php
+    require_once('footer.html');
+    ?>
 
 
     <script src="js/jquery.min.js"></script>
