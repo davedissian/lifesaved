@@ -1,0 +1,92 @@
+/*---------- Global -----------*/
+
+body{
+    font-family: Josefin Sans;
+}
+
+/* --------- Legenda da foto ---------- */
+
+/* ----------- Logo ----------- */
+
+img[src="images/back/flecha.png"]{
+    padding: 10px;
+    width: 30px;
+    margin-left: 30px;
+}
+
+/* ----------- Title -----------  */ 
+main .content-heading{
+    padding: 20px;
+    margin-left: 440px;
+}
+
+.content-heading h4{
+    margin-bottom: 10px;
+}
+
+/* ---------- Imagem --------- */
+.image-box figure img{
+    border-radius: 30px;
+}
+
+.image-box figure img[src="images/logo/icone_pilula.png"]{
+    width: 20px;
+}
+
+.content-paragraph{
+    margin-top: -20px;
+}
+
+.image-box figure p{
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.content-image-box{
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 92%;
+}
+
+.image-box{
+    margin-bottom: 80px;
+    width: 45%;
+}
+
+.first-column{
+    margin-right: 65px;
+    margin-left: 15px;
+}
+
+#second-column{
+    margin-left: 10px;
+}
+
+figcaption{
+    padding: 10px;
+    margin-top: -15px;
+    width: 90%;
+    line-height: 20px;
+}
+
+.content-figure{
+    margin-top: -5px;
+    width: 75%;
+    height: 190px;
+    margin-left: 15px;
+}
+
+.content-figure figure img{
+    padding: 5px;
+}
+
+/*---------- Footer ----------*/
+footer div figure a img{
+    width: 25px;
+    margin-right: -60px;
+}
+
+
+

@@ -1,0 +1,67 @@
+/* ----------- Logo ----------- */
+figure{
+    width: 10%;
+    margin: 40px auto;
+}
+
+/* ---------- Form ----------*/
+form{
+    width: 30%;
+    height: 550px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    margin-top: 25px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    outline: 0;
+    border: 1px solid #1e853b;
+    border-radius: 5px;
+}
+
+.inputs{
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.inputs-content{
+    padding-right: 5px;
+}
+
+/* ------------ Button ---------- */
+.button-style{
+    width: 70%;
+    margin-top: -20px;
+}
+
+fieldset .button-style button{
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* ----------- Paragraphs ---------*/
+.inputs p{
+    margin-top: -25px;
+    margin-left: 220px;
+    width: 40%;
+}
+
+.paragraphs{
+    width: 44%;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+    margin-top: -20px;
+}
+
+.paragraphs p{
+    margin-bottom: 20px;
+}
+
+.paragraphs b a, p{
+    color: black;
+}

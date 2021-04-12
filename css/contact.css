@@ -1,0 +1,58 @@
+/* ---------- Global ---------- */
+body{
+    color: #1E853B;
+}
+
+/*---------- Form -----------*/
+form{
+    width: 77.5%;
+    margin: auto;
+    padding: 5px;
+}
+
+fieldset{
+    border: 0;
+}
+
+
+.input-boxes input{
+    height: 60px;
+    outline: 0;
+    width: 99%;
+    border: 1px solid #1E853B;
+    border-radius: 5px;
+}
+
+textarea{
+    outline: 0;
+    border-color: #1E853B;
+    border-radius: 5px;
+}
+
+.input-boxes{
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.paragraph{
+    padding-left: 4px;
+}
+
+/*---------- Button ----------*/
+.button-style{
+    width: 12.69%;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.content{
+    margin-left: 454px;
+    width: 18%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.content h4{
+    margin-bottom: 10px;
+}
