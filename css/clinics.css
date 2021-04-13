@@ -1,0 +1,58 @@
+body{
+    font-family: Josefin Sans;
+}
+
+/*--------- Clinics ---------*/
+.clinics-box-content{
+    width: 80%;
+    margin: auto;
+}
+
+.clinic-box{
+    margin-bottom: 60px;
+}
+
+.search-content{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+/*--------- Paragraphs ----------*/
+.paragraph-content{
+    width: 100%;
+    padding: 5px;
+
+    margin-left: -25px;
+    margin-bottom: 10px;
+}
+
+.clinic-content{
+    width: 30%;
+    margin-left: -40px;
+    margin-bottom: -10px;
+}
+
+.clinic-content b{
+    padding: 5px;
+    margin-left: -40px;
+}
+
+.about-clinic{
+    padding: 5px;
+}
+
+figure img[src="images/outros/search.png"]{
+    width: 20px;
+    padding: 5px;
+}
+
+.first-p{
+    margin-right: 200px;
+}
+
+/* ---------- Button ---------- */

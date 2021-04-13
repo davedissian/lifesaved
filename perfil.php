@@ -29,8 +29,7 @@ require_once('./backend/check.php');
                 <input type="hidden" class="list-group-item" value="<?php echo $_SESSION['id_usuario'];?>" /> 
                 <input class="list-group-item" id="nome" name="nome" value="<?php echo $_SESSION['nome'];?> " /> 
                 <input class="list-group-item" id="email" name="email" value="<?php echo $_SESSION['email'];?> "/> 
-                <input class="list-group-item" id="telefone" name="telefone" value="<?php echo $_SESSION['telefone'];?>"/>  
-                <input type="password" class="list-group-item" id="senha" name="senha" value="<?php echo $_SESSION['senha'];?>"/>
+                <input class="list-group-item" id="telefone" name="telefone" value="<?php echo $_SESSION['telefone'];?>"/>
                 
                 <button class="btn btn-primary p-1 my-1 border-none">Alterar</button>
                 <a href="./backend/delete.php" class="btn btn-primary p-1 my-1 border-none">Deletar</a>

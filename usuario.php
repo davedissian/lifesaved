@@ -12,7 +12,7 @@
 
   <div class="container-fluid">
 	<?php
-	require_once('menu.html');
+	require_once 'menu.html';
 	?>
 	
     <div class="container">
@@ -39,12 +39,12 @@
 
           <p>
               <label for="cpf"> CPF <br/></label>
-              <input type="text" name="cpf" id="cpf" required>
+              <input type="text" name="cpf" id="cpf" maxlength="11" required>
           </p>
 
           <p>
               <label for="telefone"> Telefone <br/></label>
-              <input type="text" name="telefone" id="telefone" required>
+              <input type="text" name="telefone" id="telefone" maxlength="11" required>
           </p>
 
           <p>
@@ -54,9 +54,6 @@
               <label><input type="radio" name="sexo" value="o"/>  Outro </label>
           </p>
 
-          <!-- Estado --> 
-          <!-- Cidade -->
-
         <p>
               <input type="submit" value="Cadastrar">
         </p>
@@ -65,7 +62,7 @@
   </div>
 
   <?php
-	require_once('footer.html');
+	require_once 'footer.html';
 	?>
 
   <script src="js/jquery.min.js"></script>

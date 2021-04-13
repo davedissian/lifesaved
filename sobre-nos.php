@@ -29,16 +29,10 @@
         <div class="bg-content">
             <div>
                 <!-- Cabeçalho -->
-               <?php
-               require_once 'menu.html';
-               ?>
+                <?php
+                require_once 'menu.html';
+                ?>
             </div>
-
-            <div class="bg-color content-heading font">
-                <h1> LifeSaved </h1>
-                <h2> Sua vida vale mais que uma sensação </h2>
-            </div>
-    
         </div>
         <main>
             <!-- Seções -->
@@ -145,71 +139,6 @@
                     <button> Saiba mais </button>  
                 </div>
 
-            </section>
-
-            <section class="bg-color" id="our-clients">
-                <div class="content-heading">
-                    <h4> Nossos clientes </h4>
-                    <h2> Relatos </h2>
-                </div>
-                <div class="all-boxes">
-                    <div class="content-boxes">
-                        <address> 
-                            <div class="client-address">
-                                <figure>
-                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
-                                </figure>
-                                <b> Gustavo Rodrigues </b>
-                            </div>
-                        </address>
-                        <div class="comments-boxes">
-                            <div class="comments">
-                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias dicta accusamus nemo ipsum tempore at recusandae, porro possimus eius quaerat magni repellat, error repellendus tempora ad modi hic vitae? Animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus corporis aliquid repudiandae, hic distinctio perspiciatis ducimus aspernatur quae  </p>
-                                <figure>
-                                    <img src="images/logo/folha-verde.png" alt="Ícone de folha" title="Folha">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="content-boxes">
-                        <address> 
-                            <div class="client-address">
-                                <figure>
-                                    <img src="images/logo/icone_pilula.png" alt="">
-                                </figure>
-                                <b> Gustavo Rodrigues </b> 
-                            </div>
-                        </address>
-                        <div class="comments-boxes">
-                            <div class="comments">
-                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias dicta accusamus nemo ipsum tempore at recusandae, porro possimus eius quaerat magni repellat, error repellendus tempora ad modi hic vitae? Animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus corporis aliquid repudiandae, hic distinctio perspiciatis ducimus aspernatur quae   </p>
-                                <figure>
-                                    <img src="images/logo/folha-verde.png" alt="Ícone de folha" title="Folha">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-boxes">
-                        <address> 
-                            <div class="client-address">
-                                <figure>
-                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
-                                </figure>
-                                <b> Gustavo Rodrigues </b> 
-                            </div>
-                        </address>
-                        <div class="comments-boxes">
-                            <div class="comments">
-                                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias dicta accusamus nemo ipsum tempore at recusandae, porro possimus eius quaerat magni repellat, error repellendus tempora ad modi hic vitae? Animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus corporis aliquid repudiandae, hic distinctio perspiciatis ducimus aspernatur quae  </p>
-                                
-                                <figure>
-                                    <img src="images/logo/folha-verde.png" alt="Ícone de folha" title="Folha">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
             </section>
 
             <!-- Rodapé -->

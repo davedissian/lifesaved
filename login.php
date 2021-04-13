@@ -1,58 +1,70 @@
 <?php
-session_start();
+  session_start();
 ?>
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Life-Saved!</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-
-    <div class="container-fluid">
-	<?php
-	require_once('menu.html');
-	?>
-	</div>
-	<div class="row">
-        <form method="POST" action="./backend/log.php" class="container box">
-
-            <?php
-            if(isset($_SESSION['naologado'])):
-            ?>
-                <div class="alert alert-danger" role="alert">
-                Erro: Usuario ou senha invalidos!
-                </div>
-            <?php
-            endif;
-            unset($_SESSION['naologado']);
-            ?>
-        
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp">
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" name="senha" id="senha" maxlength="8">
-            </div>
-            <div class="container">
-              <button type="submit" class="btn cancel my-3 btn-primary">Entrar</button><br>
-              <a href="usuario.php" class="col-sm-6 col-md-4 col-lg-3 text-danger">Ainda não tem cadastro? Clique aqui!</a>
-            </div>
-        </form>
-    </div>
-
-    <?php
-    require_once('footer.html');
-    ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sign-in.css" type="text/css">
+
+    <title> Login | LifeSaved </title>
+  </head>
+
+  <body class="bg-color">
+    <form method="POST" action="./backend/log.php">
+
+      <?php
+        if(isset($_SESSION['naologado'])):
+      ?>
+              
+      <div>
+        Erro: Usuario ou senha invalidos!
+      </div>
+
+      <?php
+        endif;
+        unset($_SESSION['naologado']);
+      ?>
+
+      <div>
+        <figure>
+          <a href="index.php"><img src="images/logo/logo.png" alt="Logo do LifeSaved" title="Logo - LifeSaved"></a>
+        </figure>
+      </div>
+    
+      <fieldset>
+        <legend hidden> Login </legend>
+
+        <div class="inputs-content">
+          <div class="inputs">
+              <label for="e_mail"> Email </label><br/>
+              <input type="email" name="email" id="e_mail"><br/><br/>
+          </div>
+
+          <div class="inputs">
+              <label for="senha"> Senha </label><br/>
+              <input type="password" name="senha" id="senha" maxlength="8" required><br/><br/>
+              <a href=""><p> Esqueceu a senha? </p></a>
+          </div>
+        </div>
+
+        <div class="button-style button-content">
+            <button type="submit"> ENTRAR </button>
+        </div>
+
+        <div class="paragraphs">
+            <p> Não tenho uma conta </p>
+            <b><a href="usuario.php"> Cadastre-se </a></b>
+        </div>
+      </fieldset>
+    </form>
   </body>
 </html>

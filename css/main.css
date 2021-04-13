@@ -1,0 +1,313 @@
+/*---------- Global ----------*/
+
+body{
+    font-family: Josefin Sans;
+}
+
+/* Backgorund */  
+.bg-color{
+    background-color: #53E07B;
+    color: white;
+    padding: 20px;
+}
+
+
+.bg-color-two{
+    background-color: #f5f5f5;
+}
+
+/* ---------- Margin ----------*/
+.margin-content{
+    display: flex;
+    align-items: center;
+}
+
+/*----------- Header ------------*/
+
+.bg-content{
+    background-image: url('../images/background/bg-green.png');
+}
+
+#link-spacing{
+    margin-left: auto;
+}
+
+#logo{
+    padding: 5px;
+    margin-left: 30px;
+}
+
+/*---------- Nav ---------- */
+.nav-container{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 14px;
+}
+
+
+/* ----------- Titles ----------- */
+.content-heading{
+    text-align: center;
+    padding-bottom: 250px;
+    padding-top: 170px;
+    /*
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+}
+
+#about-us .content-heading h4{
+    color: #53E07B
+}
+
+section .content-heading {
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+
+section .content-heading h2{
+    margin-top: 5px;
+}
+
+.font h1{
+    font-size: 130px;
+}
+
+/*---------- Boxes ----------  */
+
+#boxes{
+    background-color: #34C55D;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#boxes .content-heading{
+    margin-top: -20px;
+}
+
+.box-content{
+    margin: auto;
+    display: flex;
+}
+
+.box-images{
+    padding: 25px;
+    color: white;
+}
+
+.box{
+    background: #1a8036;
+    padding: 30px;
+    border-radius: 9px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.box h4{
+    font-size: 30px
+}
+
+.box p{
+    padding: 10px;
+    margin-top: -10px;
+    line-height: 25px;
+}
+
+/*----------- About us ----------*/
+
+#about-us .content-heading h4{
+    color: #1E853B;
+}
+
+.text-content{
+    line-height: 30px;
+    width: 45%;
+    padding: 15px;
+    height: 500px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.person-image img{
+    width: 500px;
+    margin-left: 90px;
+}
+
+/* Imagem ao lado de texto
+.person-image, .text-content{
+    display: inline-block;
+}
+*/
+
+/* ------------- Button Styles ----------*/
+
+#about-us .button-style button{
+    margin-top: 6px;
+    margin-left: -10px;
+}
+
+#team .button-style{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-style button{
+    outline: 0;
+    border-radius: 40px;
+    border: 0;
+    width: 150px;
+    height: 50px;
+    background: #1E853B;
+    color: white;
+    font-family: Josefin Sans;
+    margin-left: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+.nav-container a button{
+    outline: 0;
+    border-radius: 30px;
+    border: 0;
+    width: 150px;
+    height: 50px;
+    background: #1E853B;
+    color: white;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-container a button:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+
+
+/* ----------- Team ---------- */
+
+#team .content-heading{
+    color: #1E853B;
+}
+
+.dev-images{
+    width: 72.9%;
+    margin: auto;
+    margin-top: -32px;
+    height: 550px;
+}  
+
+#images-spacing{
+    margin: 0 150px;
+}
+
+.developers{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.image-team{
+    border-radius: 100px;
+}
+
+figure div p{
+    text-align: center;
+    color: #1E853B;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+
+
+/* ------------ Our Clients ---------*/
+
+
+.comments-boxes{
+    width: 410px;
+}
+
+.all-boxes{
+   display: flex;
+   padding-bottom: 100px;
+   width: 92.4%;
+   margin: auto;
+}
+
+.comments{
+    background: white;
+    width: 350px;
+    height: 200px;
+    color: black;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.comments p{
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 25px;
+    width: 350px;
+    margin: auto;
+}
+
+.comments figure img{
+    width: 20px;
+    margin-left: 355px;
+    margin-top: 5px;
+}
+
+.client-address{
+    display: flex;
+    align-items: center;
+}
+
+/* ---------- Footer ----------  */
+
+.content-footer{
+    width: 15%;
+    padding: 40px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+#footer-spacing{
+    width: 94.4%;
+    margin: auto;
+}
+
+footer figure img{
+    padding: 15px;
+    margin-left: 30px;
+}
+
+.image-content{
+    margin-left: auto;
+    width: 20%;
+    margin-right: 45px;
+}
+
+footer div figure a img{
+    width: 25px;
+    margin-right: -60px;
+}
