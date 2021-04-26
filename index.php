@@ -39,7 +39,7 @@
                         <div class="nav-container">
                             <ul>
                                 <li><a href="clinica.php">Clínica</a></li>
-                                <li><a href="faleConosco.php"> Fale conosco</a></li>
+                                <li><a href="fale-conosco.php"> Fale conosco</a></li>
                                 <li><a href="sobre-nos.php"> Sobre nós </a></li>
                                 <a href="login.php"><button> Entrar </button></a>
                                 

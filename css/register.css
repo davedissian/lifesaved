@@ -1,0 +1,14 @@
+form .margin-content{
+    width: 100%;
+}
+
+.margin-content .input-boxes, .input-boxes select{
+    width: 100%;
+}
+
+.input-boxes select, .input-boxes option{
+    height: 64px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #1e853b;
+}

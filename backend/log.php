@@ -3,7 +3,11 @@
   require_once('conecta.php');
 
   if(empty($_POST['email']) || empty($_POST['senha'])){
-    header('Location: login.php');
+    echo "<script>
+            alert ('Preencha todos os campos!!');
+            location.href = '../login.php';
+          </script>
+        ";
     exit();
   }
 
@@ -23,9 +27,12 @@
       $_SESSION['telefone'] = $row['telefone'];
       $_SESSION['sexo'] = $row['sexo'];
   }
-    header('Location: ../index.php');
+    header('Location: ../perfil.php');
   } else {
     $_SESSION['naologado'] = true;
-    echo"<script>alert('Login inválido!'); location.href='../login.php'</script>";    
+    echo"<script>
+            alert('Login inválido!'); 
+            location.href='../login.php';
+          </script>";    
     exit();
   }

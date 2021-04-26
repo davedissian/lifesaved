@@ -5,14 +5,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title> Fale conosco </title>
+
         <link rel="icon" href="images/logo/logo.png" type="text/image">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/contact.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+
+        <title> Fale conosco </title>
 
     </head>
     <body>
@@ -21,7 +22,7 @@
         <main>
             <div class="margin-content">
                 <figure>
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="images/back/flecha.png" alt="Flecha de ir para a Home" title="Voltar para Home">
                         </a>
                 </figure>
