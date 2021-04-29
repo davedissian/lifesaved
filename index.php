@@ -31,18 +31,17 @@
                 <!-- Cabeçalho -->
                 <header class="bg-color margin-content">
                     <figure>
-                        <img src="images/logo/logo.png" id="logo" alt="Logo LifeSaved"/>
+                        <a href="index.php"><img src="images/logo/logo.png" id="logo" alt="Logo LifeSaved"/></a>
                     </figure>
     
                     <!-- Agrupamento de Links -->
                     <nav class="menu" id="link-spacing">
                         <div class="nav-container">
                             <ul>
-                                <li><a href="clinica.php">Clínica</a></li>
+                                <li><a href="clinicas.php">Clínicas</a></li>
                                 <li><a href="fale-conosco.php"> Fale conosco</a></li>
                                 <li><a href="sobre-nos.php"> Sobre nós </a></li>
-                                <a href="login.php"><button> Entrar </button></a>
-                                
+                                <a href="login.php"><button> Entrar </button></a>     
                             </ul>
                         </div>
                     </nav>   
@@ -107,7 +106,7 @@
                         <p> O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamentoO LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento
                             
                         <div class="button-style">
-                            <a href="sobre-nos.html"><button> Contato </button></a>
+                            <a href="fale-conosco.php"><button> Contato </button></a>
                         </div> 
                     </div>
                 </div>
@@ -157,7 +156,7 @@
                 </div>
 
                 <div class="button-style">
-                    <button> Saiba mais </button>  
+                    <a href="sobre-nos.php"><button href="sobre-nos.php"> Saiba mais </button></a>  
                 </div>
 
             </section>
@@ -232,7 +231,7 @@
                 <div id="footer-spacing">
                     <div class="margin-content">
                         <figure>
-                            <img src="images/logo/logo.png" alt="Logo - LifeSaved">
+                            <a href="" class="logo"><img src="images/logo/logo.png" alt="Logo - LifeSaved"></a>
                         </figure>
         
                         <div class="image-content">
@@ -248,49 +247,25 @@
 
                         <div class="content-footer">
                             <ul>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
+                                <a href=""><li> Clínica </li></a>
+                                <a href="fale-conosco.php"><li> Fale conosco </li></a>
+                                <a href="sobre-nos.php"><li> Sobre nós </li></a>
                             </ul>
                         </div>
 
                         <div class="content-footer">
                             <ul>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
+                                <a href=""><li> Metas </li></a>
+                                <a href=""><li> Minhas clínicas </li></a>
+                                <a href=""><li> Conquistas </li></a>
                             </ul>
                         </div>
 
                         <div class="content-footer">
                             <ul>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                            </ul>
-                        </div>
-
-                        <div class="content-footer">
-                            <ul>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                            </ul>
-                        </div>
-
-                        <div class="content-footer">
-                            <ul>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                            </ul>
-                        </div>
-
-                        <div class="content-footer">
-                            <ul>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
-                                <li> Sobre nós </li>
+                                <a href="login.php"><li> Login </li></a>
+                                <a href="cadastro-clinica"><li> Cadastro - Clínica </li></a>
+                                <a href="cadastro-usuario"><li> Cadastro - Usuário </li></a>
                             </ul>
                         </div>
                     </div>

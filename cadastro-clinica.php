@@ -24,14 +24,14 @@
         <main>
           <div class="margin-content">
             <figure>
-              <a href="index.php">
+              <a href="choose.php">
                   <img src="images/back/flecha.png" alt="Flecha de ir para a Home" title="Voltar para Home">
               </a>
             </figure>
               
             <div class="content">
                 <h4> Área de Cadastro </h4>
-                <h2> Usuário </h2>
+                <h2> Clínica </h2>
             </div>
           </div>
 
@@ -48,7 +48,7 @@
                       </figure>
 
                       <div class="paragraph">
-                          <label for="nome"> Nome da Clínica </label><br/>
+                        <label for="nome"> Nome da Clínica </label><br/>
                       </div>
                   </div>
 
@@ -82,7 +82,7 @@
                         </div>
                     </div>
 
-                    <input type="password" name="senha" id="senha" maxlength="8">
+                    <input type="password" name="senha" id="senha" maxlength="20">
                 </div>
 
                 <div class="input-boxes">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
 
-                    <input type="senha" name="senha2" id="senha">
+                    <input type="password" name="senha2" id="senha" maxlength="20">
                 </div>
               </div>
 
@@ -133,10 +133,40 @@
                             $query = "SELECT id_estado, nome FROM estados";
                             $executa = mysqli_query($conexao,$query);
                             while($estados = mysqli_fetch_array($executa)){
-                                echo "<option value='$estados[id_estado]'>$estados[nome]</option>";
+                                echo "<option value='$estados[nome]'>$estados[nome]</option>";
                             }
                         ?>
                     </select>
+                </div>
+              </div>
+
+              <div class="margin-content"> 
+                <div class="input-boxes">
+                  <div class="margin-content">
+                      <figure>
+                          <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                      </figure>
+
+                      <div class="paragraph">
+                        <label for="telefone"> Telefone </label><br/>
+                      </div>
+                  </div>
+
+                  <input type="tel" name="telefone" id="telefone" maxlength="11" placeholder="ex:11999999999">
+                </div>
+
+                <div class="input-boxes">
+                    <div class="margin-content">
+                      <figure>
+                        <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                      </figure>
+
+                      <div class="paragraph">
+                        <label for="descricao"> Descrição </label><br/>
+                      </div>
+                    </div>
+
+                  <input type="text" name="descricao" id="descricao" maxlength="200">
                 </div>
               </div>
 
@@ -144,12 +174,7 @@
                 <div class="button-style button-one">
                   <button type="submit" autofocus> Cadastrar </button>
                 </div>
-  
-                <div class="button-style button-two">
-                  <button type="submit" autofocus> Cancelar </button>
-                </div>
               </div>
-
             </fieldset>
           </form>
         </main>

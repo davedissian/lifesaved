@@ -15,9 +15,7 @@ require_once('./backend/check.php');
   <body>
 
   <div class="container-fluid">
-	<?php
-	require_once('menu.html');
-	?>
+	
 	</div>
 
   <main class="container my-5 py-5">
@@ -27,9 +25,23 @@ require_once('./backend/check.php');
             <ul class="list-group list-group-flush">
 
                 <input type="hidden" class="list-group-item" value="<?php echo $_SESSION['id_usuario'];?>" /> 
+                <label for="nome">Nome</label>
                 <input class="list-group-item" id="nome" name="nome" value="<?php echo $_SESSION['nome'];?> " /> 
-                <input class="list-group-item" id="email" name="email" value="<?php echo $_SESSION['email'];?> "/> 
+                <label for="email">email</label>
+                <input class="list-group-item" id="email" name="email" value="<?php echo $_SESSION['email'];?> "/>
+                <label for="cpf">cpf</label>
+                <input class="list-group-item" id="cpf" name="cpf" value="<?php echo $_SESSION['cpf'];?> "/> 
+                <label for="telefone">telefone</label>
                 <input class="list-group-item" id="telefone" name="telefone" value="<?php echo $_SESSION['telefone'];?>"/>
+                <label for="sexo">sexo</label>
+                <select class="list-group-item" id="sexo" name="sexo">
+                  <optgroup>
+                      <option value="<?php echo $_SESSION['sexo'];?>"><?php echo $_SESSION['sexo'];?></option>
+                  </optgroup>
+                  <option value="M">Masculino</option>
+                  <option value="F">Feminino</option>
+                  <option value="O">Outro</option>
+                </select>
                 
                 <button class="btn btn-primary p-1 my-1 border-none">Alterar</button>
                 <a href="./backend/delete.php" class="btn btn-primary p-1 my-1 border-none">Deletar</a>

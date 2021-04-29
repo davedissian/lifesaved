@@ -12,17 +12,22 @@
         <title> Área de Cadastro | Escolha </title>
     </head>
     <body>
-        <div class="boxes">
-            <div class="bg-color-one">
-                <div id="link-style-one" class="link-style">
-                    <a href="cadastro-usuario.php"> Usuário </a>
-                </div>      
-            </div>
-               
-            <div class="bg-color-two">
-                <div id="link-style-two" class="link-style">
-                    <a href="cadastro-clinica.php"> Clínica </a>
-                </div>
+
+        <div class="bg-color-one">
+
+        <div class="boxes box">
+            <a href="login.php"><img src="images/back/flecha.png" alt=""></a>
+
+            <h1> Cadastrar como </h1>
+        </div>
+
+        <div class="boxes flex">
+            <div class="link-style-one link-style">
+                <a href="cadastro-usuario.php"> Usuário </a>
+            </div>      
+        
+            <div class="link-style-one link-style">
+                <a href="cadastro-clinica.php"> Clínica </a>
             </div>
         </div>
     </body>

@@ -1,18 +1,26 @@
 <?php
 require_once 'conecta.php';
 
-if(isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['mensagem'])){
+if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['mensagem'])){
+    $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
     $mensagem = $_POST['mensagem'];
 
-    $sql = "INSERT INTO contato (email, telefone, mensagem) VALUES ('$email','$telefone','$mensagem')";
+    $sql = "INSERT INTO contato (nome, email, mensagem) VALUES ('$nome','$email','$mensagem')";
     $result = $conexao->query($sql);
 
                 if ($result) {
-                    echo "<script>alert('Mensagem enviada com sucesso!');location.href='../index.php'</script>";
+                    echo "
+                    <script>
+                        alert('Mensagem enviada com sucesso!');
+                        location.href='../fale-conosco.php';
+                    </script>";
                 } else {
-                    echo "<script>alert('ERRO!! Mensagem não enviada!')</script>";
+                    echo "
+                        <script>
+                            alert('ERRO!! Mensagem não enviada!')
+                            location.href='../fale-conosco.php';
+                        </script>";
                     exit();
                 }
 }

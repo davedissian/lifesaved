@@ -2,6 +2,10 @@ form .margin-content{
     width: 100%;
 }
 
+.content{
+    width: 220px;
+}
+
 .margin-content .input-boxes, .input-boxes select{
     width: 100%;
 }
@@ -11,4 +15,21 @@ form .margin-content{
     font-size: 18px;
     border-radius: 5px;
     border: 1px solid #1e853b;
+}
+
+.input-boxes input{
+    font-size: 18px;
+}
+
+.button-style{
+    width: 39.5%;
+}
+
+.button-style button{
+    width: 400px;
+    box-shadow: 1px 1px 5px 0px rgb(0, 0, 0,0.8);
+}
+
+.button-style button:hover{
+    background-color: rgba(30, 133, 59,0.8);
 }

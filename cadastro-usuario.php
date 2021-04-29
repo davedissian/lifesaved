@@ -24,14 +24,14 @@
         <main>
           <div class="margin-content">
             <figure>
-              <a href="index.php">
-                  <img src="images/back/flecha.png" alt="Flecha de ir para a Home" title="Voltar para Home">
+              <a href="choose.php">
+                <img src="images/back/flecha.png" alt="Flecha de ir para a Home" title="Voltar para Home">
               </a>
             </figure>
               
             <div class="content">
-                <h4> Área de Cadastro </h4>
-                <h2> Usuário </h2>
+              <h4> Área de Cadastro </h4>
+              <h2> Usuário </h2>
             </div>
           </div>
 
@@ -52,7 +52,7 @@
                       </div>
                   </div>
 
-                  <input type="name" name="nome" id="nome">
+                  <input type="text" name="nome" id="nome">
                 </div>
 
                 <div class="input-boxes">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
 
-                    <input type="password" name="senha" id="senha">
+                    <input type="password" name="senha" id="senha" maxlength="20">
                 </div>
 
                 <div class="input-boxes">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
 
-                    <input type="senha" name="senha2" id="senha">
+                    <input type="password" name="senha2" id="senha" maxlength="20">
                 </div>
               </div>
 
@@ -126,20 +126,49 @@
                         </div>
                     </div>
 
-                    <input type="text" name="telefone" id="telefone" maxlength="11" required>
+                    <input type="tel" name="telefone" id="telefone" maxlength="11" required>
+                </div>
+              </div>
+
+              <div class="margin-content"> 
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="foto"> Foto </label><br/>
+                        </div>
+                    </div>
+
+                    <input type="file" name="foto" id="foto" required>
+                </div>
+
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                          <label for="sexo"> Sexo </label><br/>
+                        </div>
+                    </div>
+
+                    <select name="sexo" id="sexo" required>
+                      <option value="M">Masculino</option>
+                      <option value="F">Feminino</option>
+                      <option value="O">Outro</option>
+                   </select>
                 </div>
               </div>
 
               <div class="margin-content">
-                <div class="button-style button-one">
+                <div class="button-style ">
                   <button type="submit" autofocus> Cadastrar </button>
                 </div>
-  
-                <div class="button-style button-two">
-                  <button type="submit" autofocus> Cancelar </button>
-                </div>
               </div>
-
             </fieldset>
           </form>
         </main>

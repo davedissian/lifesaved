@@ -1,0 +1,90 @@
+/* ---------- Global ---------- */
+body{
+    color: #1E853B;
+}
+
+/*---------- Form -----------*/
+form{
+    width: 77.5%;
+    margin: auto;
+    padding: 5px;
+}
+
+fieldset{
+    border: 0;
+}
+
+
+.input-boxes input{
+    float:left;	
+    height: 30px;
+    outline: 0;
+    width: 99%;
+    border: 1px solid #1E853B;
+    border-radius: 25px;
+}
+
+textarea{
+    outline: 0;
+    border-color: #ffff;
+    border-radius: 5px;
+}
+
+.input-boxes{
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.paragraph{
+    padding-left: 4px;
+    line-height: -200;
+}
+
+/*---------- Button ----------*/
+.button-style{
+    width: 12.69%;
+    margin: 45%;
+    margin-top: -10px;
+    float: left;
+}
+
+.content{
+    margin-left: 454px;
+    width: 18%;
+    text-align: center;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.content h4{
+    margin-bottom: 10px;
+}
+
+.box{
+    border:solid #53E07B; 
+    padding:0px;
+    font-size:1.2em;
+    width:90%;
+}
+
+.content2{
+    margin-left: 150px;
+    width: 75%;
+    height: 400px;
+    text-align: center;
+    padding: 35px;
+    margin-top: 0px;
+    border:1px solid #1E853B; 
+    border-radius: 25px;
+}
+
+.content3{
+    margin-left: 150px;
+    width: 70.5%;
+    height: 1550px;
+    text-align: center;
+    padding: 65px;
+    margin-top: 35px;
+    border:1px solid #1E853B; 
+    border-radius: 25px;
+}

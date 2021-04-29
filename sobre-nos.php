@@ -10,6 +10,7 @@
         <link rel="icon" href="images/logo/logo.png" type="text/image">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
+
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
@@ -158,14 +159,14 @@
         <footer class="bg-color">
             <div class="margin-content">
                 <figure>
-                    <img src="images/logo/logo.png" alt="Logo - LifeSaved">
+                    <a href="index.php"><img style="width: 40px;" src="images/logo/logo.png" alt="Logo - LifeSaved"></a>
                 </figure>
 
                 <div class="image-content">
                     <figure>
-                        <a href="">  <img src="images/footer/facebook.png" alt=""></a>
-                        <a href="">  <img src="images/footer/instagram.png" alt=""></a>                                           
-                        <a href="">  <img src="images/footer/whatsapp.png" alt=""></a>                                   
+                        <a href=""><img src="images/footer/facebook.png" alt=""></a>
+                        <a href=""><img src="images/footer/instagram.png" alt=""></a>                                           
+                        <a href=""><img src="images/footer/whatsapp.png" alt=""></a>                                   
                     </figure>
                 </div>
             </div>

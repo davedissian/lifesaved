@@ -1,5 +1,5 @@
 <?php
-    session_start();
+  session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,10 +17,11 @@
 
     </head>
     <body class="bg-color">
-        <form action="./backend/log.php" method="post">
+        <form method="POST" action="./backend/log.php">
+
             <div>
                 <figure>
-                    <img src="images/logo/logo.png" alt="Logo do LifeSaved" title="Logo - LifeSaved">
+                <a href="index.php"><img src="images/logo/logo.png" alt="Logo do LifeSaved" title="Logo - LifeSaved"></a>
                 </figure>
             </div>
     
@@ -30,17 +31,28 @@
                 <div class="inputs-content">
                     <div class="inputs">
                         <label for="e_mail"> Email </label><br/>
-                        <input type="email" name="e-mail" id="e_mail"><br/><br/>
+                        <input type="email" name="email" id="e_mail"><br/><br/>
                     </div>
     
                     <div class="inputs">
                         <label for="senha"> Senha </label><br/>
-                        <input type="password" name="senha" id="senha"><br/><br/>
+                        <input type="password" name="senha" id="senha" maxlength="20"><br/><br/>
                         <a href=""><p> Esqueceu a senha? </p></a>
                     </div>
-
-    
                 </div>
+
+                <?php
+                    if(isset($_SESSION['naologado'])):
+                ?>   
+
+                <div class="error">
+                    Usuário ou senha invalidos
+                </div>
+                <?php
+
+                    endif;
+                    unset($_SESSION['naologado']);
+                ?>
 
                 <div class="button-style button-content">
                     <button type="submit"> ENTRAR </button>

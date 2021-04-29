@@ -57,6 +57,10 @@ a{
     padding: 10px 14px;
 }
 
+a:hover{
+    color: rgba(0,0,0,0.5);
+    transition: .2s;
+}
 
 /* ----------- Titles ----------- */
 .content-heading{
@@ -111,13 +115,18 @@ section .content-heading h2{
 }
 
 .box{
-    background: #1a8036;
     padding: 30px;
     border-radius: 9px;
     margin: auto;
     margin-bottom: 20px;
     width: 300px;
     height: 300px;
+    transition: .2s;
+}
+
+.box:hover{
+    background-color: rgba(26, 128, 54, 0.5);
+    transform: translateY(-5px);
 }
 
 .box h4{
@@ -148,6 +157,10 @@ section .content-heading h2{
 .person-image img{
     width: 500px;
     margin-left: 90px;
+}
+
+#team .button-style button{
+   margin-left: -15px;
 }
 
 /* Imagem ao lado de texto
@@ -182,6 +195,12 @@ section .content-heading h2{
     font-size: 20px;
     cursor: pointer;
     margin: 25px 0;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+}
+
+.button-style button:hover{
+    background-color: rgba(30, 133, 59, 0.8);
+    transition: .2s;
 }
 
 .nav-container a button{
@@ -201,7 +220,6 @@ section .content-heading h2{
     opacity: 0.8;
     transition: 0.5s;
 }
-
 
 
 /* ----------- Team ---------- */
@@ -261,6 +279,11 @@ figure div p{
     color: black;
     padding: 20px;
     border-radius: 7px;
+    transition: .2s;
+}
+
+.comments:hover{
+    transform: translateY(-5px);
 }
 
 .comments p{
@@ -296,6 +319,10 @@ figure div p{
     margin: auto;
 }
 
+#footer-spacing a{
+    color: #000;
+}
+
 footer figure img{
     padding: 15px;
     margin-left: 30px;
@@ -310,4 +337,22 @@ footer figure img{
 footer div figure a img{
     width: 25px;
     margin-right: -60px;
+}
+
+
+footer div figure .logo img{
+   width: 40px;
+}
+
+footer div ul li:hover{
+    color: rgba(0,0,0,0.7);
+}
+
+.error{
+    color: rgb(255,0,0);
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }

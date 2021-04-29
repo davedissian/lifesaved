@@ -11,10 +11,30 @@ body{
 
 .boxes{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex{
+    justify-content: center;
+}
+
+.box{
+    padding-top: 20px;
+}
+
+.box h1{
+    margin-right: 567px;
+    color: #fff;
+}
+
+.boxes img{
+    width: 50px;
+    padding-left: 20px;
 }
 
 .bg-color-one{
-    width: 50%;
+    width: 100%;
     height: 660px;
     background-color: #53E07B;
 }
@@ -28,38 +48,33 @@ body{
     border-radius: 5px;
     font-size: 50px;
     width: 200px;
-    margin: 300px auto;
+    margin: 200px 50px;
     text-align: center;
 }
 
-.bg-color-one #link-style-one{
+.bg-color-one .link-style-one{
     background-color: #fff;
     box-shadow: 0px 5px 0px 0px rgba(201, 201, 201, 0.8);
     transition: .2s;
 }
 
-.bg-color-one #link-style-one:active{
+
+.bg-color-one .link-style-one:active{
     box-shadow: none;
     transform: translateY(5px);
 }
 
-.bg-color-two #link-style-two{
-    background-color: #53E07B;
-    box-shadow: 0px 5px 0px 0px rgba(19, 129, 33, 0.8);
-    transition: .2s;
-}
-
-.bg-color-two #link-style-two:active{
+#link-style-two:active{
     box-shadow: none;
     transform: translateY(5px);
 }
 
-.bg-color-one #link-style-one a{
+.bg-color-one .link-style-one a{
     color: #53E07B;
 }
 
 
-.bg-color-two #link-style-two a{
+#link-style-two a{
     color: #fff;
 }
 

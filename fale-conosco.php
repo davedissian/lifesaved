@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/contact.css" type="text/css">
+        <link rel="stylesheet" href="css/register.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
         <title> Fale conosco </title>
@@ -34,7 +35,7 @@
             </div>
 
             <!-- Formulário -->
-            <form action="" method=""> 
+            <form action="backend/fale.php" method="post"> 
 
                 <fieldset>
                     <legend hidden> Contato </legend>
