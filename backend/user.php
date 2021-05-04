@@ -62,7 +62,8 @@
             require_once 'cpf.php';
             if ($verificaJ == $J && $verificaK == $K) { 
                 $senha = sha1($senha1);
-                $sql = "INSERT INTO usuario (nome, senha, email, cpf, telefone, sexo) VALUES ('$nome', '$senha', '$email','$cpf', '$telefone', '$sexo')";
+                require_once 'foto.php';
+                $sql = "INSERT INTO usuario (nome, senha, email, cpf, telefone, sexo, foto) VALUES ('$nome', '$senha', '$email','$cpf', '$telefone', '$sexo', '$nomefoto')";
                 $cadastrar = $conexao->query($sql);
                     if($cadastrar){
                         echo "

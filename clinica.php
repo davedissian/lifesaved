@@ -25,16 +25,19 @@ require_once('./backend/check.php');
         Email: <?php echo $_SESSION['email'];?>
       </p>
       <p>
-        CPF: <?php echo $_SESSION['cpf'];?>
+        CNPJ: <?php echo $_SESSION['cnpj'];?>
+      </p>
+      <p>
+        Estado: <?php echo $_SESSION['estado'];?>
       </p>
       <p>
         Tel: <?php echo $_SESSION['telefone'];?>
       </p>
       <p>
-        Sexo: <?php echo $_SESSION['sexo'];?>
+        Descrição: <?php echo $_SESSION['descricao'];?>
       </p>      
 
-      <a href="editar-usuario.php">Editar perfil</a>   
+      <a href="editar-clinica.php">Editar perfil</a>   
       <a href="./backend/logout.php">Sair</a>    
   </main>
 
