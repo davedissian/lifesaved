@@ -8,7 +8,8 @@ create table if not exists usuario(
 	email varchar(50) not null,
     cpf char(11) not null,
     telefone varchar(14) not null,
-    sexo char(1) not null
+    sexo char(1) not null,
+    foto varchar(37)
 );
 
 create table if not exists clinica(

@@ -32,7 +32,16 @@
     $resultado = mysqli_query($conexao, $query);
     $linha = mysqli_num_rows($resultado);
     if($linha == 1){
-      header('Location: ../clinicas.php');
+      $row = mysqli_fetch_assoc($resultado); 
+      $_SESSION['id_clinica'] = $row['id_clinica'];
+      $_SESSION['nome'] = $row['nome'];
+      $_SESSION['senha'] = $row['senha'];
+      $_SESSION['email'] = $row['email'];
+      $_SESSION['cnpj'] = $row['cnpj'];
+      $_SESSION['estado'] = $row['estado'];
+      $_SESSION['telefone'] = $row['telefone'];
+      $_SESSION['descricao'] = $row['descricao'];
+      header('Location: ../perfil-clinica.php');
     } else {
       $_SESSION['naologado'] = true;
         echo"<script>

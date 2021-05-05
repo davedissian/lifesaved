@@ -142,7 +142,7 @@
                         </div>
                     </div>
 
-                    <input type="file" name="foto" id="foto" required>
+                    <input type="file" name="foto" id="foto">
                 </div>
 
                 <div class="input-boxes">

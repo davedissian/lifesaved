@@ -10,7 +10,7 @@ require_once('./backend/check.php');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> Sobre nós </title>
+        <title> Perfil da clinica </title>
         <link rel="icon" href="images/logo/logo.png" type="text/image">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -32,7 +32,7 @@ require_once('./backend/check.php');
                   </a>
               </figure>
               <div class="content-heading">
-                  <h2> Meu Perfil </h2>
+                  <h2> Perfil da clínica </h2>
               </div>
           </div>
           <!-- Agrupamento de imagens -->
@@ -41,7 +41,7 @@ require_once('./backend/check.php');
             <div class="margin-content">
                 <div class="margin-content image-box first-column">
                   <figure>
-                      <img id="photo" src="images/integrantes/daiana-integrante.jpeg" alt="Daiana Fernanda" title="Daiana Fernanda"><br/>
+                      <img id="photo" src="images/images/clinicas.jpg" alt="Daiana Fernanda" title="Daiana Fernanda"><br/>
                   </figure>
 
                   <div class="content-figure">
@@ -54,24 +54,23 @@ require_once('./backend/check.php');
       
                     <!-- Legenda da imagem -->
                     <figcaption>
-                      <input type="hidden" value="<?php echo $_SESSION['id_usuario'];?> "/>
 
-                      <p> Email: <?php echo $_SESSION['email'];?> </p>
-                      <p> CPF: <?php echo $_SESSION['cpf'];?> </p>
-                      
-                      <p> Telefone: <?php echo $_SESSION['telefone'];?>  </p>
-                      <p>Sexo: <?php echo $_SESSION['sexo'];?> </p>
+                      <p> Email: <?php echo $_SESSION['email']?></p>
+                      <p> CNPJ: <?php echo $_SESSION['cnpj']?></p>
+                      <p> Estado: <?php echo $_SESSION['estado']?></p>
+                      <p> Telefone: <?php echo $_SESSION['telefone']?></p>
+                      <p> Sobre: <?php echo $_SESSION['descricao']?></p>
 
                     </figcaption>
 
                     <div class="margin-content">
                       <div class="button-style ">
-                        <a href="editar-usuario.php">
-                          <button type="submit" autofocus> Editar dados </button>  
-                        </a>
-                        <a href="./backend/logout.php">
-                          <button>Sair</button>
-                        </a>
+                          <a href="editar-clinica.php">
+                            <button type="submit" autofocus>Editar dados</button>
+                          </a>
+                          <a href="./backend/logout.php">
+                            <button>Sair</button>
+                          </a>
                       </div>
                     </div>
                   </div>
