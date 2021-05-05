@@ -29,9 +29,30 @@
         <div class="bg-content">
             <div>
                 <!-- Cabeçalho -->
-               <?php
-               require_once 'menu.html';
-               ?>
+                <header class="bg-color margin-content">
+                    <figure>
+                        <a href="index.php"><img src="images/logo/logo.png" id="logo" alt="Logo LifeSaved"/></a>
+                    </figure>
+    
+                    <!-- Agrupamento de Links -->
+                    <nav class="menu" id="link-spacing">
+                        <div class="nav-container">
+                            <ul>
+                                <li><a href="clinicas.php">Clínicas</a></li>
+                                <li><a href="fale-conosco.php"> Fale conosco</a></li>
+                                <li><a href="sobre-nos.php"> Sobre nós </a></li>
+                                <a href='login.php'><button> Entrar </button></a>
+                                <?php
+                                    if(session_start()){
+                                        echo '<a href="perfil.php">'.$_SESSION["nome"].'</a>';
+                                    } else { 
+                                        echo "<a href='login.php'><button> Entrar </button></a>";
+                                    }
+                                ?>                            
+                            </ul>
+                        </div>
+                    </nav>   
+                </header>
             </div>
 
             <div class="bg-color content-heading font">
@@ -92,7 +113,7 @@
                         <p> O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamentoO LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento
                             
                         <div class="button-style">
-                            <a href="sobre-nos.html"><button> Contato </button></a>
+                            <a href="fale-conosco.php"><button> Contato </button></a>
                         </div> 
                     </div>
                 </div>
@@ -142,7 +163,7 @@
                 </div>
 
                 <div class="button-style">
-                    <button> Saiba mais </button>  
+                    <a href="sobre-nos.php"><button href="sobre-nos.php"> Saiba mais </button></a>  
                 </div>
 
             </section>
@@ -213,9 +234,50 @@
             </section>
 
             <!-- Rodapé -->
-            <?php
-            require_once 'footer.html';
-            ?>
+            <footer>
+                <div id="footer-spacing">
+                    <div class="margin-content">
+                        <figure>
+                            <a href="" class="logo"><img src="images/logo/logo.png" alt="Logo - LifeSaved"></a>
+                        </figure>
+        
+                        <div class="image-content">
+                            <figure>
+                                <a href=""><img src="images/footer/facebook.png" alt=""></a>
+                                <a href=""><img src="images/footer/instagram.png" alt=""></a>                                           
+                                <a href=""><img src="images/footer/whatsapp.png" alt=""></a>                                   
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="margin-content">
+
+                        <div class="content-footer">
+                            <ul>
+                                <a href=""><li> Clínica </li></a>
+                                <a href="fale-conosco.php"><li> Fale conosco </li></a>
+                                <a href="sobre-nos.php"><li> Sobre nós </li></a>
+                            </ul>
+                        </div>
+
+                        <div class="content-footer">
+                            <ul>
+                                <a href=""><li> Metas </li></a>
+                                <a href=""><li> Minhas clínicas </li></a>
+                                <a href=""><li> Conquistas </li></a>
+                            </ul>
+                        </div>
+
+                        <div class="content-footer">
+                            <ul>
+                                <a href="login.php"><li> Login </li></a>
+                                <a href="cadastro-clinica"><li> Cadastro - Clínica </li></a>
+                                <a href="cadastro-usuario"><li> Cadastro - Usuário </li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
 </html>

@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Life Saved!</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <!-- Configurações da página -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="container-fluid">
-    <?php
-    require_once('menu.html');
-    ?>
+        <title> LifeSaved | Minha clínica </title>
+        <link rel="icon" href="images/logo/logo.png" type="text/image">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/contact.css" type="text/css">
+        <link rel="stylesheet" href="css/register.css" type="text/css">
+        <link rel="stylesheet" href="css/profiles.css" type="text/css">
 
-        <div class="container">
-            <form action="./backend/clinic.php" method="post">
-                <p>
-                    <label for="nome"> Nome da Clínica <br/></label>
-                    <input type="name" name="nome" id="nome" maxlength="200" required> 
-                </p>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
-                <p>
-                    <label for="senha"> Digite sua senha <br/></label>
-                    <input type="password" name="senha" id="senha" maxlength="8" required/>
-                </p>
+    </head>
+    <body class="bg-color-two">
+        <!-- Conteúdo principal -->
+      <main>
+          <div class="margin-content">
+            <figure>
+                <a href="clinicas.php">
+                  <img src="images/back/flecha.png" alt="Ícone de voltar" title="Voltar">
+                </a>
+            </figure>
+            
+            <div class="content-heading">
+                <h2> Minha Clínica </h2>
+            </div>
+          </div>
+          <!-- Agrupamento de imagens -->
+      
+          <div class="content-image-box">
+            <div class="margin-content">
+              <div class="margin-content image-box first-column">
+                <figure>
+                  <img id="photo" src="images/images/clinicas.jpg" alt="Clínica" title="Clinica">
+                </figure>
 
-                <p>
-                    <label for="senha"> Confirme sua senha <br/></label>
-                    <input type="password" name="senha2" id="senha" maxlength="8" required/>
-                </p>
+                <div class="content-figure">
+                  <figure>
+                    <div class="margin-content content-paragraph">
+                      <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">    
 
-                <p>
-                    <label for="email"> Digite seu e-mail <br/></label>
-                    <input type="email" name="email" id="email" maxlength="50" required>
-                </p>
-
-                <p>
-                    <label for="cnpj"> CNPJ <br/></label>
-                    <input type="text" name="cnpj" id="cnpj" maxlength="14" required>
-                </p>
-
-                <p>
-                    <label for="estado">Estado</label>
-                    <select name="estado">
-                    <option value=""></option>
-                        <?php
-                            require_once './backend/conecta.php';
-                            $query = "SELECT id_estado, nome FROM estados";
-                            $executa = mysqli_query($conexao,$query);
-                            while($estados = mysqli_fetch_array($executa)){
-                                echo "<option value='$estados[id_estado]'>$estados[nome]</option>";
-                            }
-                        ?>
-                    </select>
-                </p>
-                
-
-                <p>
-                    <label for="telefone"> Telefone <br/></label>
-                    <input type="text" name="telefone" id="telefone" maxlength="11" required>
-                </p>
-
-                <p>
-                    <label for="descricao"> Descrição da Clínica <br/></label>
-                    <input type="text" name="descricao" id="descricao" required>
-                </p>
-
-                <p>
-                    <input type="submit" value="Cadastrar">
-                </p>
-            </form>
-        </div>
-    </div>
-		
-    <?php
-    require_once('footer.html');
-    ?>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+                      <?php
+                        require_once './backend/conecta.php';
+                        $id_clinica = $_GET['id'];
+                        $clinica = "SELECT id_clinica, nome, email, cnpj, estado, telefone, descricao FROM clinica WHERE id_clinica = $id_clinica";
+                        $executa = mysqli_query($conexao, $clinica);
+                        $dados = mysqli_fetch_array($executa);
+                      ?>
+                    
+                      <p> <?php echo $dados['nome'];?> </p>
+                    </div>   
+                      <p> Email: <?php echo $dados['email'];?> </p>
+                      <p> CNPJ: <?php echo $dados['cnpj'];?> </p>
+                      <p> Estado: <?php echo $dados['estado'];?> </p>
+                      <p> Telefone: <?php echo $dados['telefone'];?>  </p>
+                      <p> Descrição: <?php echo $dados['descricao'];?> </p>               
+                  </figure>                                           
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+    </body>
 </html>

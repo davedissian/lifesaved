@@ -1,150 +1,175 @@
-<!-- Versão do documento HTML -->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Configurando nossa página -->
+        <!-- Configurações da página -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <!-- Descrição da sua página -->
-        <meta name="description" content="Site com o objetivo de auxiliar na recuperação de dependentes químicos, em parceria com clínicas e recantos especializados">
-
-        <!-- Palavras chaves, autor e tamanho da janela da página -->
-        <meta name="keywords" content="Dependentes químicos, Recuperação">
-        <meta name="author" content="Luke Yusuke">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title> LifeSaved </title>
-
-        <!-- Links internos -->
-        <link rel="stylesheet" href="css/main.css" type="text/css">
-        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <title> Sobre nós </title>
         <link rel="icon" href="images/logo/logo.png" type="text/image">
+        <link rel="stylesheet" href="css/reset.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
     </head>
-    <body>
-        <div class="bg-content">
-            <div>
-                <!-- Cabeçalho -->
-                <?php
-                require_once 'menu.html';
-                ?>
-            </div>
-        </div>
+    <body class="bg-color-two">
+        <!-- Conteúdo principal -->
         <main>
-            <!-- Seções -->
-            <section class="bg-color" id="boxes">
-                <div class="content-heading">
-                    <h4> Compromisso </h4>
-                    <h2> Sobre o LifeSaved </h2>
-                </div>
-
-                <div class="box-content">
-                    <div class="box">
-                        <h4> Missão </h4>
-                        <figure>
-                            <img class="box-images" src="images/outros/target.png" alt="Imagem - Missão" title="Imagem - Missão">
-                        </figure>
-                        <p> Auxiliar dependentes químicos em sua recuperação, contando com parcerias de clínicas e recantos especializados  </p>
-                    </div>
-
-                    <div class="box">
-                        <h4> Visão </h4>
-                        <figure>
-                            <img class="box-images" src="images/outros/visionary.png" alt="Imagem - Visão" title="Imagem - Visão">
-                        </figure>
-                        <p> Ser reconhecida nacionalmente e ajudar diversas pessoas que sofrem da dependência química </p>
-                    </div>
-
-                    <div class="box">
-                        <h4> Valores </h4>
-                        <figure>
-                            <img class="box-images" src="images/outros/visitor.png" alt="Imagem - Valores" title="Imagem - Valores">
-                        </figure>
-                        <p> - Qualidade de serviço<br/>
-                            - Pessoas vem primeiro<br/>
-                            - Melhoria contínua<br/>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="about-us">
-                <div class="content-heading">
-                    <h4> Bem-Vindos ao LifeSaved </h4>
-                </div>
-
-                <div class="margin-content">
-                    <figure class="person-image">
-                        <img src="images/outros/pessoa-.png" alt="Pessoa" title="Pessoa">
-                    </figure>
-                    <div class="text-content">
-                        <h2> Quem Somos </h2> 
-                        <p> O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamentoO LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento O LifeSaved é um projeto que tem como objetivo auxiliar os dependentes químicos em sua recuperação, através de parcerias com clínicas e recantos especializados neste tipo de tratamento
-                            
-                        <div class="button-style">
-                            <a href="sobre-nos.html"><button> Contato </button></a>
-                        </div> 
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-color-two" id="team">
+            <div class="margin-content">
+                <figure>
+                    <a href="index.php">
+                        <img src="images/back/flecha.png" alt="Ícone de voltar" title="Voltar para a Home">
+                    </a>
+                </figure>
                 <div class="content-heading">
                     <h4> Nosso time </h4>
                     <h2> Equipe LifeSaved </h2>
                 </div>
-
-                <!-- Agrupamento de imagens -->
-                <div class="dev-images">
-                    <figure class="margin-content">
-                        <div class="developers">
-                            <img class="image-team"  src="images/integrantes/daiana-integrante.jpeg" alt="Daiana Fernanda" title="Daiana Fernanda">
-                            <p> Daiana Fernanda </p>
+            </div>
+            <!-- Agrupamento de imagens -->
+        
+            <div class="content-image-box">
+                <div class="margin-content">
+                    <div class="margin-content image-box first-column">
+                        <figure>
+                            <img src="images/integrantes/daiana-integrante.jpeg" alt="Daiana Fernanda" title="Daiana Fernanda"><br/>
+                        </figure>
+    
+                        <div class="content-figure">
+                            <figure>
+                                <div class="margin-content content-paragraph">
+                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone"><br/>
+                                    <p> Daiana Fernanda </p>
+                                </div>
+                
+                                <!-- Legenda da imagem -->
+                                <figcaption>
+                                    iana Fernanda é uma famosa desenvolvedora Web, muito conhecida por criar a Interface do Chrome. Atualmente a mesma tem 100 anos e vive juntamento com a Rainha ElizabethDaiana Fernanda é uma famosa desenvolvedora Web, muito conhecida por criar 
+                                </figcaption>
+                            </figure>
                         </div>
-
-                        <div id="images-spacing" class="developers">
-                            <img class="image-team" src="images/integrantes/davi-integrante.jpeg" alt="Davi Oliveira" title="Davi Oliveira">
-                            <p> Davi Oliveira </p>
+                    </div>
+        
+                    <div class="margin-content  image-box">
+                        <figure>
+                            <img src="images/integrantes/davi-integrante.jpeg" alt="Davi Oliveira" title="Davi Oliveira"><br/>
+                        </figure>
+            
+                        <div class="content-figure">
+                            <figure>
+                                <div class="margin-content content-paragraph">
+                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                                <p> Davi Oliveira </p>
+                                </div>
+                
+                                <figcaption>
+                                    Davi Oliveira é mais conhecido como Pai do Microsoft Edge, infelizmente foi baleado no ano de 2009 e acabou falecendo, porém, junto com Avedissian, criou o famoso projeto LifeSaved Davi Oliveira é mais conhecido como Pai com 
+                                </figcaption>
+                            </figure>
                         </div>
-
-                        <div class="developers">
-                            <img class="image-team" src="images/integrantes/diego-integrante.jpeg" alt="Diego Avedissian" title="Diego Avedissian">
-                            <p> Diego Avedissian </p>
+                    </div>
+                </div>
+                <div class="margin-content">
+                    <div class="margin-content image-box first-column">
+                        <figure>
+                            <img src="images/integrantes/diego-integrante.jpeg" alt="Foto de Diego Avedissian" title="Diego Avedissian"><br/>
+                        </figure>
+    
+                        <div class="content-figure">
+                            <figure>
+                                <div class="margin-content content-paragraph">
+                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone"><br/>
+                                    <p> Diego Avedissian </p>
+                                </div>
+                
+                                <!-- Legenda da imagem -->
+                                <figcaption>
+                                    Daiana Fernanda é uma famosa desenvolvedora Web, muito conhecida por criar a Interface do Chrome. Atualmente a mesma tem 100 anos e vive juntamento com a Rainha Elizabeth Davi Oliveira é mais conhecido como Pai do  
+                                </figcaption>
+                            </figure>
                         </div>
-                    </figure>
-
-                    <figure class="margin-content">
-                        <div class="developers">
-                            <img class="image-team" src="images/integrantes/fabiana-integrante.jpeg" alt="Fabiana Macedo " title="Fabiana Macedo">
-                            <p> Fabiana Macedo </p>
+                    </div>
+        
+                    <div class="margin-content  image-box">
+                        <figure>
+                            <img src="images/integrantes/fabiana-integrante.jpeg" alt="Foto de Fabiana Macedo" title="Fabiana Macedo"><br/>
+                        </figure>
+            
+                        <div class="content-figure ">
+                            <figure>
+                                <div class="margin-content content-paragraph">
+                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                                <p> Fabiana Macedo </p>
+                                </div>
+                
+                                <figcaption>
+                                    Davi Oliveira é mais conhecido como Pai do Microsoft Edge, infelizmente foi baleado no ano de 2009 e acabou falecendo, porém, junto com Avedissian, criou o famoso projeto LifeSaved Davi Olivecom 
+                                </figcaption>
+                            </figure>
                         </div>
-
-                        <div id="images-spacing" class="developers">
-                            <img class="image-team" src="images/integrantes/gustavo-integrante.jpeg" alt="Gustavo Rodrigues" title="Gustavo Rodrigues">
-                            <p> Gustavo Rodrigues </p>
-                        </div>
-
-                        <div class="developers">
-                            <img class="image-team" src="images/integrantes/luke-integrante.jpeg" alt="Luke Yusuke" title="Luke Yusuke">
-                            <p> Luke Yusuke </p>
-                        </div>
-                    </figure>
+                    </div>
                 </div>
 
-                <div class="button-style">
-                    <button> Saiba mais </button>  
+                <div class="margin-content">
+                    <div class="margin-content image-box first-column">
+                        <figure>
+                            <img src="images/integrantes/gustavo-integrante.jpeg" alt="Foto de Gustavo Rodrigues" title="Gustavo Rodrigues"><br/>
+                        </figure>
+    
+                        <div class="content-figure">
+                            <figure>
+                                <div class="margin-content content-paragraph">
+                                    <img src="images/logo/icone_pilula.png" alt="Ícone de pílula" title="Ícone"><br/>
+                                    <p> Gustavo Rodrigues </p>
+                                </div>
+                
+                                <!-- Legenda da imagem -->
+                                <figcaption>
+                                    Daiana Fernanda é uma famosa desenvolvedora Web, muito conhecida por criar a Interface do Chrome. Atualmente a mesma tem 100 anos e vive juntamento com a Rainha Elizabeth Davi Oliveira é mais conhecido como Pai do 
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+        
+                    <div class="margin-content  image-box">
+                        <figure>
+                            <img src="images/integrantes/luke-integrante.jpeg" alt="Foto de Luke Yusuke" title="Luke Yusuke"><br/>
+                        </figure>
+            
+                        <div class="content-figure">
+                            <figure>
+                                <div class="margin-content content-paragraph">
+                                    <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                                <p> Luke Yusuke </p>
+                                </div>
+                
+                                <figcaption>
+                                    Davi Oliveira é mais conhecido como Pai do Microsoft Edge, infelizmente foi baleado no ano de 2009 e acabou falecendo, porém, junto com Avedissian, criou o famoso projeto LifeSaved Davi Oliveira é mais conhecido como Pai do Microsoft Edge, infelizmente 
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
-
-            </section>
-
-            <!-- Rodapé -->
-            <?php
-            require_once 'footer.html';
-            ?>
+            </div>
         </main>
+
+        <footer class="bg-color">
+            <div class="margin-content">
+                <figure>
+                    <a href="index.php"><img style="width: 40px;" src="images/logo/logo.png" alt="Logo - LifeSaved"></a>
+                </figure>
+
+                <div class="image-content">
+                    <figure>
+                        <a href=""><img src="images/footer/facebook.png" alt=""></a>
+                        <a href=""><img src="images/footer/instagram.png" alt=""></a>                                           
+                        <a href=""><img src="images/footer/whatsapp.png" alt=""></a>                                   
+                    </figure>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
