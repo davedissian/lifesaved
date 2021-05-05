@@ -8,7 +8,8 @@ create table if not exists usuario(
 	email varchar(50) not null,
     cpf char(11) not null,
     telefone varchar(14) not null,
-    sexo char(1) not null
+    sexo char(1) not null,
+    foto varchar(37)
 );
 
 create table if not exists clinica(
@@ -18,6 +19,7 @@ create table if not exists clinica(
 	senha char(40) not null,
     email varchar(50) not null,
     cnpj char(14) not null,
+    estado char(20) not null,
     telefone varchar(11) not null,
     descricao text,
     foreign key(id_usuario) references usuario(id_usuario)
@@ -25,10 +27,10 @@ create table if not exists clinica(
 
 create table contato (
     id int not null AUTO_INCREMENT PRIMARY KEY,
+    nome varchar(50) not null,
     email varchar(80) not null,
-    telefone varchar(12) not null,
     mensagem varchar(500) not null
-    );
+);
 
 CREATE TABLE `estados` (
   `id_estado` int(11) NOT NULL,

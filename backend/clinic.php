@@ -42,15 +42,24 @@
                 </script>
             ";
 
+    } else if (!is_numeric($_POST["telefone"])) {
+        echo "
+            <script>
+                alert ('No campo TELEFONE digite somente NUMEROS');
+                location.href = '../clinica.php';
+                history.back();
+            </script>
+        ";
     } else {
         $nome = $_POST['nome'];
         $senha = sha1($_POST['senha']);
         $email = $_POST['email'];
         $cnpj = $_POST['cnpj'];
+        $estado = $_POST['estado'];
         $telefone = $_POST['telefone'];
         $descricao = $_POST['descricao'];
 
-        $registro = "INSERT INTO clinica (nome, senha, email, cnpj, telefone, descricao) values ('$nome', '$senha', '$email','$cnpj', '$telefone', '$descricao')";
+        $registro = "INSERT INTO clinica (nome, senha, email, cnpj, estado, telefone, descricao) values ('$nome', '$senha', '$email','$cnpj', '$estado','$telefone', '$descricao')";
        
         $cadastro = mysqli_query($conexao, $registro);
 
