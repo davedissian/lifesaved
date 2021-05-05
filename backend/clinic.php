@@ -57,7 +57,7 @@
         $cnpj = $_POST['cnpj'];
         $estado = $_POST['estado'];
         $telefone = $_POST['telefone'];
-        $descricao = $_POST['descricao'];
+        $descricao = nl2br($_POST['descricao']);
 
         $registro = "INSERT INTO clinica (nome, senha, email, cnpj, estado, telefone, descricao) values ('$nome', '$senha', '$email','$cnpj', '$estado','$telefone', '$descricao')";
        

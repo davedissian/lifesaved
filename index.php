@@ -41,11 +41,13 @@
                                 <li><a href="clinicas.php">Clínicas</a></li>
                                 <li><a href="fale-conosco.php"> Fale conosco</a></li>
                                 <li><a href="sobre-nos.php"> Sobre nós </a></li>
-                                <a href='login.php'><button> Entrar </button></a>
                                 <?php
-                                    if(session_start()){
+                                    session_start();
+                                    if(isset($_SESSION['cpf'])){
                                         echo '<a href="perfil.php">'.$_SESSION["nome"].'</a>';
-                                    } else { 
+                                    } else if (isset($_SESSION['cnpj'])){ 
+                                        echo '<a href="perfil-clinica.php">'.$_SESSION["nome"].'</a>';
+                                    } else {
                                         echo "<a href='login.php'><button> Entrar </button></a>";
                                     }
                                 ?>                            
