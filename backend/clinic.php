@@ -1,5 +1,6 @@
 <?php
     require_once 'conecta.php';
+    require_once 'cnpj.php';
 
     $senha1 = $_POST['senha'];
     $senha2 = $_POST['senha2'];
@@ -50,7 +51,27 @@
                 history.back();
             </script>
         ";
-    } else {
+    } else if (!validaCnpj($_POST['cnpj'])){
+        echo "
+            <script>
+                alert ('CNPJ inválido!');
+                location.href = '../clinica.php';
+                history.back();
+            </script>
+        ";
+    } else if ($checar_cnpj = "SELECT cnpj FROM clinica WHERE cnpj = '".$_POST['cnpj']."' "){
+            $executar = mysqli_query($conexao, $checar_cnpj);
+            $achou_cnpj = mysqli_num_rows($executar);
+            if($achou_cnpj == 1){
+                echo "
+                    <script>
+                        alert('cnpj já cadastrado!');
+                        location.href = '../usuario.php';
+                        history.back();
+                    </script>
+                ";
+    } else {  
+
         $nome = $_POST['nome'];
         $senha = sha1($_POST['senha']);
         $email = $_POST['email'];
@@ -82,5 +103,5 @@
         }
         }
     }   
+}
 ?>
-
