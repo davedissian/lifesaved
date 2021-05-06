@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 807bb04b57e7b18bc63446fb405e8f368d10a9df
 <?php
 $foto = $_FILES['foto'];
 if ($foto['error']==4){
@@ -28,4 +31,7 @@ if ($foto['error']==4){
     }
 }
 ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 807bb04b57e7b18bc63446fb405e8f368d10a9df

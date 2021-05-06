@@ -41,6 +41,7 @@
                                 <li><a href="clinicas.php">Clínicas</a></li>
                                 <li><a href="fale-conosco.php"> Fale conosco</a></li>
                                 <li><a href="sobre-nos.php"> Sobre nós </a></li>
+<<<<<<< HEAD
                                 <?php
                                     session_start();
                                     if(isset($_SESSION['cpf'])){
@@ -51,6 +52,15 @@
                                         echo "<a href='login.php'><button> Entrar </button></a>";
                                     }
                                 ?>                            
+=======
+                                <a href="login.php"><button> Entrar </button></a>
+                                <?php
+                                if(session_start()){
+                                    echo $_SESSION['nome'];
+                                }  
+                                ?>
+                                <a href="perfil.php">Perfil</a>   
+>>>>>>> 807bb04b57e7b18bc63446fb405e8f368d10a9df
                             </ul>
                         </div>
                     </nav>   
