@@ -76,11 +76,17 @@
         $senha = sha1($_POST['senha']);
         $email = $_POST['email'];
         $cnpj = $_POST['cnpj'];
-        $estado = $_POST['estado'];
         $telefone = $_POST['telefone'];
         $descricao = nl2br($_POST['descricao']);
+        $cep = $_POST['cep'];
+        $rua = $_POST['rua'];
+        $numero = $_POST['numero'];
+        $complemento = $_POST['complemento'];
+        $bairro = $_POST['bairro'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
 
-        $registro = "INSERT INTO clinica (nome, senha, email, cnpj, estado, telefone, descricao) values ('$nome', '$senha', '$email','$cnpj', '$estado','$telefone', '$descricao')";
+        $registro = "INSERT INTO clinica (nome, senha, email, cnpj, telefone, descricao, cep, rua, numero, complemento, bairro, cidade, estado) values ('$nome', '$senha', '$email','$cnpj', '$telefone', '$descricao', '$cep', '$rua', '$numero', '$complemento', '$bairro', '$cidade', '$estado')";
        
         $cadastro = mysqli_query($conexao, $registro);
 

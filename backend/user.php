@@ -8,6 +8,13 @@
     $cpf = $_POST['cpf'];
     $telefone = $_POST['telefone'];
     $sexo = $_POST['sexo'];
+    $cep = $_POST['cep'];
+    $rua = $_POST['rua'];
+    $numero = $_POST['numero'];
+    $complemento = $_POST['complemento'];
+    $bairro = $_POST['bairro'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
 
     if(is_numeric($nome)){
         echo "
@@ -63,7 +70,7 @@
             if ($verificaJ == $J && $verificaK == $K) { 
                 $senha = sha1($senha1);
                 require_once 'foto.php';
-                $sql = "INSERT INTO usuario (nome, senha, email, cpf, telefone, sexo, foto) VALUES ('$nome', '$senha', '$email','$cpf', '$telefone', '$sexo', '$nomefoto')";
+                $sql = "INSERT INTO usuario (nome, senha, email, cpf, telefone, sexo, foto, cep, rua, numero, complemento, bairro, cidade, estado) VALUES ('$nome', '$senha', '$email','$cpf', '$telefone', '$sexo', '$nomefoto', '$cep', '$rua', '$numero', '$complemento', '$bairro', '$cidade', '$estado')";
                 $cadastrar = $conexao->query($sql);
                     if($cadastrar){
                         echo "

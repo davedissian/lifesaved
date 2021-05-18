@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -51,7 +50,7 @@
                       <?php
                         require_once './backend/conecta.php';
                         $id_clinica = $_GET['id'];
-                        $clinica = "SELECT id_clinica, nome, email, cnpj, estado, telefone, descricao FROM clinica WHERE id_clinica = $id_clinica";
+                        $clinica = "SELECT * FROM clinica WHERE id_clinica = $id_clinica";
                         $executa = mysqli_query($conexao, $clinica);
                         $dados = mysqli_fetch_array($executa);
                       ?>
@@ -62,7 +61,15 @@
                       <p> CNPJ: <?php echo $dados['cnpj'];?> </p>
                       <p> Estado: <?php echo $dados['estado'];?> </p>
                       <p> Telefone: <?php echo $dados['telefone'];?>  </p>
-                      <p> Descrição: <?php echo $dados['descricao'];?> </p>               
+                      <p> Descrição: <?php echo $dados['descricao'];?> </p>   
+                      <h3>Endereço</h3>
+                      <p>Cep: <?php echo $dados['cep'];?> </p>
+                      <p>Rua: <?php echo $dados['rua'];?> </p>
+                      <p>Numero: <?php echo $dados['numero'];?> </p>
+                      <p>Complemento: <?php echo $dados['complemento'];?> </p>
+                      <p>Bairro: <?php echo $dados['bairro'];?> </p>
+                      <p>Cidade: <?php echo $dados['cidade'];?> </p>
+                      <p>Estado: <?php echo $dados['estado'];?> </p>            
                   </figure>                                           
                 </div>
               </div>
@@ -70,53 +77,4 @@
           </div>
       </main>
     </body>
-=======
-<?php
-session_start();
-require_once('./backend/check.php');
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Life-Saved!</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-
-  <div class="container-fluid">
-	
-	</div>
-
-  <main class="container my-5 py-5">
-    <input type="hidden" value="<?php echo $_SESSION['id_usuario'];?>"/>
-    <h1><?php echo $_SESSION['nome'];?></h1>
-      <p>
-        Email: <?php echo $_SESSION['email'];?>
-      </p>
-      <p>
-        CNPJ: <?php echo $_SESSION['cnpj'];?>
-      </p>
-      <p>
-        Estado: <?php echo $_SESSION['estado'];?>
-      </p>
-      <p>
-        Tel: <?php echo $_SESSION['telefone'];?>
-      </p>
-      <p>
-        Descrição: <?php echo $_SESSION['descricao'];?>
-      </p>      
-
-      <a href="editar-clinica.php">Editar perfil</a>   
-      <a href="./backend/logout.php">Sair</a>    
-  </main>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
->>>>>>> 807bb04b57e7b18bc63446fb405e8f368d10a9df
 </html>

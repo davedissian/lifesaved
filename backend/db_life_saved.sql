@@ -8,8 +8,15 @@ create table if not exists usuario(
 	email varchar(50) not null,
     cpf char(11) not null,
     telefone varchar(14) not null,
-    sexo char(1) not null,
-    foto varchar(37)
+    sexo varchar(9) not null,
+    foto varchar(37),
+    cep char(9) not null,
+    rua varchar(60) not null,
+    numero varchar(5) not null,
+    complemento varchar(20),
+    bairro varchar(50) not null,
+    cidade varchar(60) not null,
+    estado varchar(20) not null
 );
 
 create table if not exists clinica(
@@ -22,6 +29,13 @@ create table if not exists clinica(
     estado char(20) not null,
     telefone varchar(11) not null,
     descricao text,
+    cep char(9) not null,
+    rua varchar(60) not null,
+    numero varchar(5) not null,
+    complemento varchar(20),
+    bairro varchar(50) not null,
+    cidade varchar(60) not null,
+    estado varchar(20) not null,
     foreign key(id_usuario) references usuario(id_usuario)
 );
 

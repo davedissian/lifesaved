@@ -41,7 +41,6 @@
                                 <li><a href="clinicas.php">Clínicas</a></li>
                                 <li><a href="fale-conosco.php"> Fale conosco</a></li>
                                 <li><a href="sobre-nos.php"> Sobre nós </a></li>
-<<<<<<< HEAD
                                 <?php
                                     session_start();
                                     if(isset($_SESSION['cpf'])){
@@ -52,15 +51,6 @@
                                         echo "<a href='login.php'><button> Entrar </button></a>";
                                     }
                                 ?>                            
-=======
-                                <a href="login.php"><button> Entrar </button></a>
-                                <?php
-                                if(session_start()){
-                                    echo $_SESSION['nome'];
-                                }  
-                                ?>
-                                <a href="perfil.php">Perfil</a>   
->>>>>>> 807bb04b57e7b18bc63446fb405e8f368d10a9df
                             </ul>
                         </div>
                     </nav>   
@@ -255,9 +245,9 @@
         
                         <div class="image-content">
                             <figure>
-                                <a href=""><img src="images/footer/facebook.png" alt=""></a>
-                                <a href=""><img src="images/footer/instagram.png" alt=""></a>                                           
-                                <a href=""><img src="images/footer/whatsapp.png" alt=""></a>                                   
+                                <a href="https://www.facebook.com/"><img src="images/footer/facebook.png" alt=""></a>
+                                <a href="https://www.instagram.com/"><img src="images/footer/instagram.png" alt=""></a>                                           
+                                <a href="https://web.whatsapp.com/"><img src="images/footer/whatsapp.png" alt=""></a>                                   
                             </figure>
                         </div>
                     </div>

@@ -26,6 +26,13 @@
     $_SESSION['cpf'] = $row['cpf'];
     $_SESSION['telefone'] = $row['telefone'];
     $_SESSION['sexo'] = $row['sexo'];
+    $_SESSION['cep'] = $row['cep'];
+    $_SESSION['rua'] = $row['rua'];
+    $_SESSION['numero'] = $row['numero'];
+    $_SESSION['complemento'] = $row['complemento'];
+    $_SESSION['bairro'] = $row['bairro'];
+    $_SESSION['cidade'] = $row['cidade']; 
+    $_SESSION['estado'] = $row['estado'];
     header('Location: ../perfil.php');
   } else if($linha == 0){
     $query = "SELECT * FROM clinica WHERE email='{$email}' AND senha='{$senha}'";
@@ -41,6 +48,13 @@
       $_SESSION['estado'] = $row['estado'];
       $_SESSION['telefone'] = $row['telefone'];
       $_SESSION['descricao'] = $row['descricao'];
+      $_SESSION['cep'] = $row['cep'];
+      $_SESSION['rua'] = $row['rua'];
+      $_SESSION['numero'] = $row['numero'];
+      $_SESSION['complemento'] = $row['complemento'];
+      $_SESSION['bairro'] = $row['bairro'];
+      $_SESSION['cidade'] = $row['cidade']; 
+      $_SESSION['estado'] = $row['estado'];
       header('Location: ../perfil-clinica.php');
     } else {
       $_SESSION['naologado'] = true;

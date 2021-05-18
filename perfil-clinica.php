@@ -57,9 +57,16 @@ require_once('./backend/check.php');
 
                       <p> Email: <?php echo $_SESSION['email']?></p>
                       <p> CNPJ: <?php echo $_SESSION['cnpj']?></p>
-                      <p> Estado: <?php echo $_SESSION['estado']?></p>
                       <p> Telefone: <?php echo $_SESSION['telefone']?></p>
                       <p> Sobre: <?php echo $_SESSION['descricao']?></p>
+                      <h3>Endereço</h3>
+                      <p>Cep: <?php echo $_SESSION['cep'];?> </p>
+                      <p>Rua: <?php echo $_SESSION['rua'];?> </p>
+                      <p>Numero: <?php echo $_SESSION['numero'];?> </p>
+                      <p>Complemento: <?php echo $_SESSION['complemento'];?> </p>
+                      <p>Bairro: <?php echo $_SESSION['bairro'];?> </p>
+                      <p>Cidade: <?php echo $_SESSION['cidade'];?> </p>
+                      <p>Estado: <?php echo $_SESSION['estado'];?> </p>
 
                     </figcaption>
 

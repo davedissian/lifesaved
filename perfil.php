@@ -19,7 +19,6 @@ require_once('./backend/check.php');
         <link rel="stylesheet" href="css/register.css" type="text/css">
         <link rel="stylesheet" href="css/profiles.css" type="text/css">
 
-<<<<<<< HEAD
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
 
     </head>
@@ -42,7 +41,7 @@ require_once('./backend/check.php');
             <div class="margin-content">
                 <div class="margin-content image-box first-column">
                   <figure>
-                      <img id="photo" src="images/integrantes/daiana-integrante.jpeg" alt="Daiana Fernanda" title="Daiana Fernanda"><br/>
+                      <img id="photo" src="./images/images/user.png" alt="usuario" title="usuario"><br/>
                   </figure>
 
                   <div class="content-figure">
@@ -59,9 +58,16 @@ require_once('./backend/check.php');
 
                       <p> Email: <?php echo $_SESSION['email'];?> </p>
                       <p> CPF: <?php echo $_SESSION['cpf'];?> </p>
-                      
                       <p> Telefone: <?php echo $_SESSION['telefone'];?>  </p>
                       <p>Sexo: <?php echo $_SESSION['sexo'];?> </p>
+                      <h3>Endereço</h3>
+                      <p>Cep: <?php echo $_SESSION['cep'];?> </p>
+                      <p>Rua: <?php echo $_SESSION['rua'];?> </p>
+                      <p>Numero: <?php echo $_SESSION['numero'];?> </p>
+                      <p>Complemento: <?php echo $_SESSION['complemento'];?> </p>
+                      <p>Bairro: <?php echo $_SESSION['bairro'];?> </p>
+                      <p>Cidade: <?php echo $_SESSION['cidade'];?> </p>
+                      <p>Estado: <?php echo $_SESSION['estado'];?> </p>
 
                     </figcaption>
 
@@ -81,30 +87,4 @@ require_once('./backend/check.php');
           </div>
       </main>
     </body>
-=======
-  <main class="container my-5 py-5">
-    <input type="hidden" value="<?php echo $_SESSION['id_usuario'];?>"/>
-    <h1><?php echo $_SESSION['nome'];?></h1>
-      <p>
-        Email: <?php echo $_SESSION['email'];?>
-      </p>
-      <p>
-        CPF: <?php echo $_SESSION['cpf'];?>
-      </p>
-      <p>
-        Tel: <?php echo $_SESSION['telefone'];?>
-      </p>
-      <p>
-        Sexo: <?php echo $_SESSION['sexo'];?>
-      </p>      
-
-      <a href="editar-usuario.php">Editar perfil</a>   
-      <a href="./backend/logout.php">Sair</a>    
-  </main>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
->>>>>>> 807bb04b57e7b18bc63446fb405e8f368d10a9df
 </html>

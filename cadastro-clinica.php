@@ -46,13 +46,11 @@
                       <figure>
                           <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
                       </figure>
-
                       <div class="paragraph">
                         <label for="nome"> Nome da Clínica </label><br/>
                       </div>
                   </div>
-
-                  <input type="name" name="nome" id="nome" maxlength="200">
+                  <input type="text" name="nome" id="nome" maxlength="200" required>
                 </div>
 
                 <div class="input-boxes">
@@ -60,13 +58,11 @@
                       <figure>
                         <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
                       </figure>
-
                       <div class="paragraph">
                         <label for="email"> Digite seu email </label><br/>
                       </div>
                     </div>
-
-                  <input type="email" name="email" id="email">
+                  <input type="email" name="email" id="email" required>
                 </div>
               </div>
 
@@ -76,13 +72,11 @@
                         <figure>
                             <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
                         </figure>
-
                         <div class="paragraph">
                             <label for="senha"> Digite sua senha </label><br/>
                         </div>
                     </div>
-
-                    <input type="password" name="senha" id="senha" maxlength="20">
+                    <input type="password" name="senha" id="senha" maxlength="20" required>
                 </div>
 
                 <div class="input-boxes">
@@ -90,13 +84,11 @@
                         <figure>
                             <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
                         </figure>
-
                         <div class="paragraph">
                             <label for="senha"> Confirme sua senha </label><br/>
                         </div>
                     </div>
-
-                    <input type="password" name="senha2" id="senha" maxlength="20">
+                    <input type="password" name="senha2" id="senha2" maxlength="20" required>
                 </div>
               </div>
 
@@ -106,75 +98,159 @@
                         <figure>
                             <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
                         </figure>
-
                         <div class="paragraph">
                             <label for="cpf"> CNPJ </label><br/>
                         </div>
                     </div>
-
                     <input type="text" name="cnpj" id="cnpj" maxlength="14" required>
                 </div>
 
                 <div class="input-boxes">
-                    <div class="margin-content">
-                        <figure>
-                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
-                        </figure>
-
-                        <div class="paragraph">
-                          <label for="telefone"> Estado </label><br/>
-                        </div>
-                    </div>
-
-                    <select name="estado">
-                        <option value=""></option>
-                        <?php
-                            require_once './backend/conecta.php';
-                            $query = "SELECT id_estado, nome FROM estados";
-                            $executa = mysqli_query($conexao,$query);
-                            while($estados = mysqli_fetch_array($executa)){
-                                echo "<option value='$estados[nome]'>$estados[nome]</option>";
-                            }
-                        ?>
-                    </select>
+                  <div class="margin-content">
+                      <figure>
+                          <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                      </figure>
+                      <div class="paragraph">
+                        <label for="telefone"> Telefone </label><br/>
+                      </div>
+                  </div>
+                  <input type="tel" name="telefone" id="telefone" maxlength="11" placeholder="ex:11999999999">
                 </div>
               </div>
 
               <div class="margin-content"> 
                 <div class="input-boxes">
                   <div class="margin-content">
-                      <figure>
-                          <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
-                      </figure>
-
-                      <div class="paragraph">
-                        <label for="telefone"> Telefone </label><br/>
-                      </div>
-                  </div>
-
-                  <input type="tel" name="telefone" id="telefone" maxlength="11" placeholder="ex:11999999999">
-                </div>
-
-                <div class="input-boxes">
-                    <div class="margin-content">
-                      <figure>
-                        <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
-                      </figure>
-
-                      <div class="paragraph">
-                        <label for="descricao"> Descrição </label><br/>
-                      </div>
+                    <figure>
+                      <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                    </figure>
+                    <div class="paragraph">
+                      <label for="descricao"> Descrição </label><br/>
                     </div>
-
-                  <input type="text" name="descricao" id="descricao" maxlength="200">
+                  </div>
+                    <textarea name="descricao" id="descricao" maxlength="200"></textarea>                  
                 </div>
               </div>
 
               <div class="margin-content">
-                <div class="button-style button-one">
+                <div class="content">
+                  <h2> Endereço </h2>
+                </div>
+              </div>
+
+              <div class="margin-content"> 
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="cep"> Digite seu cep </label><br/>
+                        </div>
+                    </div>
+                    <input type="text" name="cep" id="cep" maxlength="9" placeholder="Ex: 08011-000" required>
+                </div>
+                
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="rua"> Logradouro / Rua </label><br/>
+                        </div>
+                    </div>
+
+                    <input type="text" name="rua" id="rua" maxlength="60" required>
+                </div>
+
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="numero"> Número </label><br/>
+                        </div>
+                    </div>
+
+                    <input type="text" name="numero" id="numero" maxlength="5" required>
+                </div>
+              </div>
+
+              <div class="margin-content"> 
+
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="complemento"> Complemento </label><br/>
+                        </div>
+                    </div>
+
+                    <input type="text" name="complemento" id="complemento" maxlength="20" placeholder="Ex: Apto: 21 Bloco:2">
+                </div>
+
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="bairro"> Bairro / Vila </label><br/>
+                        </div>
+                    </div>
+
+                    <input type="text" name="bairro" id="bairro" maxlength="50" required>
+                </div>
+              </div>
+
+              <div class="margin-content"> 
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="cidade"> Cidade </label><br/>
+                        </div>
+                    </div>
+
+                    <input type="text" name="cidade" id="cidade" maxlength="60" required>
+                </div>
+
+                <div class="input-boxes">
+                    <div class="margin-content">
+                        <figure>
+                            <img src="images/logo/icone_pilula.png" alt="Ícone" title="Ícone">
+                        </figure>
+
+                        <div class="paragraph">
+                            <label for="estado"> UF / Estado </label><br/>
+                        </div>
+                    </div>
+                    <input type="text" name="estado" id="estado" maxlength="20" required>
+                  </div>
+                </div>
+
+              <?php
+              require_once './backend/busca-cep.php';
+              ?>
+
+              <div class="margin-content">
+                <div class="button-style ">
                   <button type="submit" autofocus> Cadastrar </button>
                 </div>
               </div>
+
             </fieldset>
           </form>
         </main>
